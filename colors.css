@@ -1,0 +1,38 @@
+header,
+footer {
+  background-color: #c4c4c4;
+}
+
+.item__1,
+.item__2,
+.item__3 {
+  background-color: #e8ebed;
+}
+
+.item__6,
+.item__7,
+.item__8 {
+  background-color: #a2a9b7;
+}
+
+.item__9,
+.item__10,
+.item__12 {
+  background-color: #ffaa87;
+}
+
+.item__4 {
+  background-color: #90BCE8;
+}
+
+.item__5 {
+  background-color: #FEBF26;
+}
+
+.item__11 {
+  background-color: #C7ABD4;
+}
+
+.item__13 {
+  background-color: #F55E62;
+}
