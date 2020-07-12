@@ -32,7 +32,7 @@ footer {
 }
 
 .grid__1 {
-  grid-template-columns: 2.05fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-gap: 6.6px;
   grid-area: grid__1;
   grid-template-areas:
@@ -46,12 +46,16 @@ footer {
   grid-gap: 10px;
   grid-area: grid__2;
   grid-template-areas:
-    "item__14 item__16"
-    "item__15 item__16";
+    "item__14 item__16 item__16"
+    "item__15 item__16 item__16";
 }
 
 .item {
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
   height: 155px;
+  font-size: 14px;
 }
 
 .item__1 {
@@ -80,10 +84,12 @@ footer {
 
 .item__7 {
   grid-area: item__7;
+  padding-bottom: calc(100% - 3.3px) !important;
 }
 
 .item__8 {
   grid-area: item__8;
+  padding-bottom: calc(100% - 3.3px) !important;
 }
 
 .item__9 {
@@ -106,7 +112,66 @@ footer {
   grid-area: item__13;
 }
 
+.item__14 {
+  grid-area: item__14;
+}
+
+.item__15 {
+  grid-area: item__15;
+}
+
+.item__16 {
+  grid-area: item__16;
+}
+
 .square {
+  position: relative;
   height: 0;
-  padding-bottom: 100%;
+  padding: 0 0 100% 0;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.item__6 .content {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  overflow-y: scroll;
+}
+
+.item__16 .content {
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.title {
+  max-width: 210px;
+  flex-shrink: 0;
+  float: left;
+}
+
+.value {
+  text-align: right;
+}
+
+.dots {
+  width: 100%;
+  margin: 0 10px;
+  border-bottom: 1px dashed;
 }

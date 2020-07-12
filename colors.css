@@ -13,6 +13,7 @@ footer {
 .item__7,
 .item__8 {
   background-color: #a2a9b7;
+  color: white;
 }
 
 .item__9,
@@ -21,18 +22,65 @@ footer {
   background-color: #ffaa87;
 }
 
+.item__14,
+.item__15,
+.item__16 {
+  background-color: #e3ebd3;
+}
+
 .item__4 {
-  background-color: #90BCE8;
+  background-color: #90bce8;
 }
 
 .item__5 {
-  background-color: #FEBF26;
+  background-color: #febf26;
 }
 
 .item__11 {
-  background-color: #C7ABD4;
+  background-color: #c7abd4;
 }
 
 .item__13 {
-  background-color: #F55E62;
+  background-color: #f55e62;
+}
+
+.item__15 .content {
+  background-image: url(image.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.item__15 .warning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-color: white;
+  color: #F55E62;
+  font-size: 36px;
+  opacity: 0;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.item__15 .content:hover {
+  filter: blur(2px);
+  cursor: pointer;
+}
+
+.item__15 .content:hover + .warning {
+  opacity: 1;
 }

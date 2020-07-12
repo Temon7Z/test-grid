@@ -1,0 +1,35 @@
+@media screen and (min-width: 480px) {
+  .grid__main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "grid__1 grid__1 grid__1"
+      "item__1 item__2 item__4"
+      "item__3 item__3 item__5"
+      "grid__2 grid__2 grid__2"
+      "item__12 item__9 item__9"
+      "item__13 item__10 item__11";
+    padding: 10px;
+  }
+
+  .grid__1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "item__6 item__6 item__7"
+      "item__6 item__6 item__8";
+    grid-gap: 10px;
+  }
+
+  .grid__2 {
+    display: grid;
+  }
+
+  .item__7 {
+    grid-area: item__7;
+    padding-bottom: 100% !important;
+  }
+
+  .item__8 {
+    grid-area: item__8;
+    padding-bottom: 100% !important;
+  }
+}
